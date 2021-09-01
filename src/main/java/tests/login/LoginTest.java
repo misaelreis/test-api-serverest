@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static utils.BaseUrlUtil.baseUrlLogin;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class LoginTest {
 
@@ -24,6 +25,7 @@ public class LoginTest {
                 .post(baseUrlLogin)
                 .then()
                 .statusCode(200)
+                .body(matchesJsonSchemaInClasspath("login-schema.json"))
                 .body("authorization", notNullValue())
                 .body("message", equalTo("Login realizado com sucesso"));
     }

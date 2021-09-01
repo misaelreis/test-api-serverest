@@ -11,6 +11,7 @@ import pojo.ProductPojo;
 import utils.LoginUtil;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static utils.BaseUrlUtil.baseUrlCar;
@@ -50,6 +51,7 @@ public class CreateCarTest {
                 .post(baseUrlCar)
                 .then()
                 .statusCode(201)
+                .body(matchesJsonSchemaInClasspath("car-schema.json"))
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
 

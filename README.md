@@ -1,5 +1,7 @@
 ## Apresentação
 - Automação de testes baseado na Api [Serverest](https://serverest.dev/#/)
+- Testes de contrato baseado no [post](https://medium.com/assertqualityassurance/testando-seu-contrato-com-o-restassured-f0e974fb9bcb)
+
 ---
 ## Pré-requisitos
 

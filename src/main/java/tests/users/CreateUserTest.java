@@ -10,6 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static utils.BaseUrlUtil.baseUrlUser;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class CreateUserTest {
 
@@ -23,6 +24,7 @@ public class CreateUserTest {
                 .post(baseUrlUser)
                 .then()
                 .statusCode(201)
+                .body(matchesJsonSchemaInClasspath("user-schema.json"))
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
     }
@@ -37,6 +39,7 @@ public class CreateUserTest {
                 .when()
                 .post(baseUrlUser)
                 .then()
+                .body(matchesJsonSchemaInClasspath("user-schema.json"))
                 .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
