@@ -7,6 +7,8 @@
 
 - [JDK 8+](https://www.oracle.com/java/technologies/javase-downloads.html)
 - [IntelliJ](https://www.jetbrains.com/idea/download/)
+---
 
-## Instalação
-- mvn install
+## Instalação & Execução
+- No terminal execute o comando <b>mvn install</b>
+- Em seguida o comando <b>mvn clean test</b>
