@@ -39,7 +39,7 @@ public class CancelCarTest {
     }
 
     @Test
-    public void cancelCart(){
+    public void testCancelCart(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -63,7 +63,7 @@ public class CancelCarTest {
     }
 
     @Test
-    public void cancelCarWithoutCar(){
+    public void testCancelCarWithoutCar(){
         given()
                 .contentType(ContentType.JSON)
                 .headers("Authorization", tokenId)
@@ -74,7 +74,7 @@ public class CancelCarTest {
     }
 
     @Test
-    public void cancelCarWithoutToken(){
+    public void testCancelCarWithoutToken(){
         given()
                 .contentType(ContentType.JSON)
                 .delete(baseUrlCar.concat("cancelar-compra"))

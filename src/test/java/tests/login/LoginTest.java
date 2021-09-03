@@ -15,7 +15,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 public class LoginTest {
 
     @Test
-    public void loginSuccess(){
+    public void testLoginContract(){
         UserUtil user = new UserUtil().createUserAdm();
         LoginPojo login = LoginDataFactory.loginSuccess();
         given()
@@ -25,13 +25,26 @@ public class LoginTest {
                 .post(baseUrlLogin)
                 .then()
                 .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("login-schema.json"))
+                .body(matchesJsonSchemaInClasspath("schema/login-schema.json"));
+    }
+
+    @Test
+    public void tesLoginSuccess(){
+        UserUtil user = new UserUtil().createUserAdm();
+        LoginPojo login = LoginDataFactory.loginSuccess();
+        given()
+                .contentType(ContentType.JSON)
+                .body(login)
+                .when()
+                .post(baseUrlLogin)
+                .then()
+                .statusCode(200)
                 .body("authorization", notNullValue())
                 .body("message", equalTo("Login realizado com sucesso"));
     }
 
     @Test
-    public void loginWithoutEmail(){
+    public void testLoginWithoutEmail(){
         LoginPojo login = LoginDataFactory.loginWithoutEmail();
         given()
                 .contentType(ContentType.JSON)
@@ -44,7 +57,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginWithoutPassword(){
+    public void testLoginWithoutPassword(){
         LoginPojo login = LoginDataFactory.loginWithoutPassword();
         given()
                 .contentType(ContentType.JSON)
@@ -57,7 +70,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginEmailEmpty(){
+    public void testLoginEmailEmpty(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setEmail("");
         given()
@@ -71,7 +84,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginPasswordEmpty(){
+    public void testLoginPasswordEmpty(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setPassword("");
         given()
@@ -85,7 +98,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginEmailNull(){
+    public void testLoginEmailNull(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setEmail(null);
         given()
@@ -99,7 +112,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginPasswordNull(){
+    public void testLoginPasswordNull(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setPassword(null);
         given()
@@ -113,7 +126,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginEmailIncorrect(){
+    public void testLoginEmailIncorrect(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setEmail("teste.com.br");
         given()
@@ -127,7 +140,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginEmailNoRegistered(){
+    public void testLoginEmailNoRegistered(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setEmail("misael@email.com.br");
         given()
@@ -141,7 +154,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginPasswordIncorrect(){
+    public void testLoginPasswordIncorrect(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         login.setPassword("123");
         given()
@@ -155,7 +168,7 @@ public class LoginTest {
     }
 
     @Test
-    public void loginFieldsRequired(){
+    public void testLoginFieldsRequired(){
         LoginPojo login = LoginDataFactory.loginSuccess();
         given()
                 .body(login)

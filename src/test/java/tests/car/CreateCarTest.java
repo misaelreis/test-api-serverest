@@ -40,7 +40,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createCar(){
+    public void testCarContract(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -51,7 +51,28 @@ public class CreateCarTest {
                 .post(baseUrlCar)
                 .then()
                 .statusCode(201)
-                .body(matchesJsonSchemaInClasspath("car-schema.json"))
+                .body(matchesJsonSchemaInClasspath("schema/car-schema.json"));
+
+        given()
+                .contentType(ContentType.JSON)
+                .headers("Authorization", tokenId)
+                .delete(baseUrlCar.concat("concluir-compra"))
+                .then()
+                .body("message", equalTo("Registro excluído com sucesso"));
+    }
+
+    @Test
+    public void testCreateCar(){
+        CarPojo car = new CarDataFactory().car();
+        car.addProducts((new ProductCarPojo(productId,1)));
+        given()
+                .contentType(ContentType.JSON)
+                .headers("Authorization", tokenId)
+                .body(car)
+                .when()
+                .post(baseUrlCar)
+                .then()
+                .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
 
@@ -64,7 +85,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createTwoCars(){
+    public void testCreateTwoCars(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -97,7 +118,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createCarQuantityProductInsufficient(){
+    public void testCreateCarQuantityProductInsufficient(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,100)));
         given()
@@ -112,7 +133,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createCarWithoutToken(){
+    public void testCreateCarWithoutToken(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -126,7 +147,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createCarFieldRequired(){
+    public void testCreateCarFieldRequired(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -140,7 +161,7 @@ public class CreateCarTest {
     }
 
     @Test
-    public void createCarWithoutProducts(){
+    public void testCreateCarWithoutProducts(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo("1",1)));
         given()

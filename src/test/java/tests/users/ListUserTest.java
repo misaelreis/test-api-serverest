@@ -14,7 +14,7 @@ public class ListUserTest {
     public String id;
 
     @Test
-    public void listUsersAllParams(){
+    public void testListUsersAllParams(){
         id = new UserUtil().createUserId();
         given()
                 .contentType(ContentType.JSON)
@@ -31,7 +31,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void listUserWithoutParams(){
+    public void testListUserWithoutParams(){
         given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -43,7 +43,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void listUserTypeParamsIncorrect(){
+    public void testListUserTypeParamsIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("_id", 1.0f)
@@ -60,7 +60,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void listUserParamsIncorrect(){
+    public void testListUserParamsIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("id", 1.0f)
@@ -72,7 +72,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void listUserForId(){
+    public void testListUserForId(){
         id = new UserUtil().createUserId();
         given()
                 .contentType(ContentType.JSON)
@@ -84,7 +84,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void listUserIdIncorrect(){
+    public void tstListUserIdIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .when()

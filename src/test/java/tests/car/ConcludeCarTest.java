@@ -39,7 +39,7 @@ public class ConcludeCarTest {
     }
 
     @Test
-    public void concludeCar(){
+    public void testConcludeCar(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         given()
@@ -63,7 +63,7 @@ public class ConcludeCarTest {
     }
 
     @Test
-    public void concludeCarWithoutCar(){
+    public void testConcludeCarWithoutCar(){
         given()
                 .contentType(ContentType.JSON)
                 .headers("Authorization", tokenId)
@@ -74,7 +74,7 @@ public class ConcludeCarTest {
     }
 
     @Test
-    public void concludeCarWithoutToken(){
+    public void testConcludeCarWithoutToken(){
         given()
                 .contentType(ContentType.JSON)
                 .delete(baseUrlCar.concat("concluir-compra"))

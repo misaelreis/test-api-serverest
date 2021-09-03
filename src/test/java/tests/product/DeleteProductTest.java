@@ -31,7 +31,7 @@ public class DeleteProductTest {
     }
 
     @Test
-    public void deleteProduct(){
+    public void testDeleteProduct(){
         ProductPojo product = new ProductDataFactory().product();
         productId = given()
                 .contentType(ContentType.JSON)
@@ -56,7 +56,7 @@ public class DeleteProductTest {
     }
 
     @Test
-    public void deleteProductAbsent(){
+    public void testDeleteProductAbsent(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -70,7 +70,7 @@ public class DeleteProductTest {
     }
 
     @Test
-    public void deleteProductTokenUser(){
+    public void testDeleteProductTokenUser(){
         ProductPojo product = new ProductDataFactory().product();
         productId = given()
                 .contentType(ContentType.JSON)
@@ -96,7 +96,7 @@ public class DeleteProductTest {
     }
 
     @Test
-    public void deleteProductWithoutToken(){
+    public void testDeleteProductWithoutToken(){
         ProductPojo product = new ProductDataFactory().product();
         productId = given()
                 .contentType(ContentType.JSON)
@@ -122,7 +122,7 @@ public class DeleteProductTest {
     }
 
     @Test
-    public void deleteProductWithCar(){
+    public void testDeleteProductWithCar(){
         carTokenId = new LoginUtil().loginUserCar();
         ProductPojo product = new ProductDataFactory().product();
         productId = given()

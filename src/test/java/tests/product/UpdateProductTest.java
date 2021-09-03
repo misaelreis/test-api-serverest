@@ -37,7 +37,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProduct(){
+    public void testUpdateProduct(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -51,7 +51,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductNameExistent(){
+    public void testUpdateProductNameExistent(){
         ProductPojo product = new ProductDataFactory().product();
         ProductUtil prod = new ProductUtil().createProduct();
         product.setNome("Nome cadastrado");
@@ -67,7 +67,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductWithoutName(){
+    public void testUpdateProductWithoutName(){
         ProductPojo productSn = new ProductDataFactory().productWithoutName();
         given()
                 .contentType(ContentType.JSON)
@@ -81,7 +81,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductNameNull(){
+    public void testUpdateProductNameNull(){
         ProductPojo productSn = new ProductDataFactory().product();
         productSn.setNome(null);
         given()
@@ -96,7 +96,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductWithoutDescription(){
+    public void testUpdateProductWithoutDescription(){
         ProductPojo productSn = new ProductDataFactory().productWithoutDescription();
         given()
                 .contentType(ContentType.JSON)
@@ -110,7 +110,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductDescriptionNull(){
+    public void testUpdateProductDescriptionNull(){
         ProductPojo productSn = new ProductDataFactory().product();
         productSn.setDescricao(null);
         given()
@@ -125,7 +125,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductWithoutPrice(){
+    public void testUpdateProductWithoutPrice(){
         ProductPojo productSn = new ProductDataFactory().productWithoutPrice();
         given()
                 .contentType(ContentType.JSON)
@@ -139,7 +139,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductPriceNull(){
+    public void testUpdateProductPriceNull(){
         ProductPojo productSn = new ProductDataFactory().product();
         productSn.setPreco(null);
         given()
@@ -154,7 +154,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductWithoutQuantity(){
+    public void testUpdateProductWithoutQuantity(){
         ProductPojo productSn = new ProductDataFactory().productWithoutQuantity();
         given()
                 .contentType(ContentType.JSON)
@@ -168,7 +168,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductQuantityNull(){
+    public void testUpdateProductQuantityNull(){
         ProductPojo productSn = new ProductDataFactory().product();
         productSn.setQuantidade(null);
         given()
@@ -183,7 +183,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductIdUser(){
+    public void testUpdateProductIdUser(){
         tokenUser = new LoginUtil().loginUserFix();
         ProductPojo product = new ProductDataFactory().product();
         given()
@@ -198,7 +198,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductWithoutToken(){
+    public void testUpdateProductWithoutToken(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -212,7 +212,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductIdIncorrect(){
+    public void testUpdateProductIdIncorrect(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -226,7 +226,7 @@ public class UpdateProductTest {
     }
 
     @Test
-    public void updateProductFieldsRequire(){
+    public void testUpdateProductFieldsRequire(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .headers("Authorization", tokenAdm)

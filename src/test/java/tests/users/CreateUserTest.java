@@ -15,7 +15,7 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 public class CreateUserTest {
 
     @Test
-    public void createAdmUser(){
+    public void testUserContract(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         given()
                 .contentType(ContentType.JSON)
@@ -24,13 +24,25 @@ public class CreateUserTest {
                 .post(baseUrlUser)
                 .then()
                 .statusCode(201)
-                .body(matchesJsonSchemaInClasspath("user-schema.json"))
+                .body(matchesJsonSchemaInClasspath("schema/user-schema.json"));
+    }
+
+    @Test
+    public void testCreateAdmUser(){
+        CreateUsersPojo user = new UserDataFactory().userAdm();
+        given()
+                .contentType(ContentType.JSON)
+                .body(user)
+                .when()
+                .post(baseUrlUser)
+                .then()
+                .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
     }
 
     @Test
-    public void createUser(){
+    public void testCreateUser(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador("false");
         given()
@@ -39,14 +51,13 @@ public class CreateUserTest {
                 .when()
                 .post(baseUrlUser)
                 .then()
-                .body(matchesJsonSchemaInClasspath("user-schema.json"))
                 .statusCode(201)
                 .body("message", equalTo("Cadastro realizado com sucesso"))
                 .body("_id", notNullValue());
     }
 
     @Test
-    public void createUserAdmWithoutType(){
+    public void testCreateUserAdmWithoutType(){
         CreateUsersPojo user = new UserDataFactory().userWithoutTypeAdm();
         given()
                 .contentType(ContentType.JSON)
@@ -59,7 +70,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserTypeAdmNull(){
+    public void testCreateUserTypeAdmNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador(null);
         given()
@@ -73,7 +84,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserTypeAdmIncorrect(){
+    public void testCreateUserTypeAdmIncorrect(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador("ok");
         given()
@@ -87,7 +98,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserWithoutName(){
+    public void testCreateUserWithoutName(){
         CreateUsersPojo user = new UserDataFactory().userWithoutName();
         given()
                 .contentType(ContentType.JSON)
@@ -100,7 +111,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserNameNull(){
+    public void testCreateUserNameNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setNome(null);
         given()
@@ -114,7 +125,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserNameEmpty(){
+    public void testCreateUserNameEmpty(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setNome("");
         given()
@@ -128,7 +139,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserWithoutEmail(){
+    public void testCreateUserWithoutEmail(){
         CreateUsersPojo user = new UserDataFactory().userWithoutEmail();
         given()
                 .contentType(ContentType.JSON)
@@ -141,7 +152,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserEmailIncorrect(){
+    public void testCreateUserEmailIncorrect(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("2");
         given()
@@ -155,7 +166,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserEmailExistent(){
+    public void testCreateUserEmailExistent(){
         UserUtil userAdm = new UserUtil().createUserAdm();
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("misael@qa.com.br");
@@ -170,7 +181,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserEmailEmpty(){
+    public void testCreateUserEmailEmpty(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("");
         given()
@@ -184,7 +195,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserWithoutPassword(){
+    public void testCreateUserWithoutPassword(){
         CreateUsersPojo user = new UserDataFactory().userWithoutPassword();
         given()
                 .contentType(ContentType.JSON)
@@ -197,7 +208,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserPasswordNull(){
+    public void testCreateUserPasswordNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setPassword(null);
         given()
@@ -211,7 +222,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserPasswordEmpty(){
+    public void testCreateUserPasswordEmpty(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setPassword("");
         given()
@@ -225,7 +236,7 @@ public class CreateUserTest {
     }
 
     @Test
-    public void createUserFieldsRequired(){
+    public void testCreateUserFieldsRequired(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         given()
                 .body(user)

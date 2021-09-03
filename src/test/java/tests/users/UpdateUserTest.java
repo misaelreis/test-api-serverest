@@ -21,7 +21,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserAdm(){
+    public void testUpdateUserAdm(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         given()
                 .contentType(ContentType.JSON)
@@ -34,7 +34,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUser(){
+    public void testUpdateUser(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador("false");
         given()
@@ -48,7 +48,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserIncorrectId(){
+    public void testUpdateUserIncorrectId(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador("false");
         given()
@@ -63,7 +63,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserWithoutTypeAdm(){
+    public void testUpdateUserWithoutTypeAdm(){
         CreateUsersPojo user = new UserDataFactory().userWithoutTypeAdm();
         given()
                 .contentType(ContentType.JSON)
@@ -76,7 +76,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserTypeAdmNull(){
+    public void testUpdateUserTypeAdmNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador(null);
         given()
@@ -90,7 +90,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserTypeAdmIncorrect(){
+    public void testUpdateUserTypeAdmIncorrect(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setAdministrador("ok");
         given()
@@ -104,7 +104,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserWithoutName(){
+    public void testUpdateUserWithoutName(){
         CreateUsersPojo user = new UserDataFactory().userWithoutName();
         given()
                 .contentType(ContentType.JSON)
@@ -117,7 +117,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserNameNull(){
+    public void testUpdateUserNameNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setNome(null);
         given()
@@ -131,7 +131,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserNameEmpty(){
+    public void testUpdateUserNameEmpty(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setNome("");
         given()
@@ -145,7 +145,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserWithoutEmail(){
+    public void testUpdateUserWithoutEmail(){
         CreateUsersPojo user = new UserDataFactory().userWithoutEmail();
         given()
                 .contentType(ContentType.JSON)
@@ -158,7 +158,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserEmailIncorrect(){
+    public void testUpdateUserEmailIncorrect(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("2");
         given()
@@ -172,7 +172,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserEmailExistent(){
+    public void testUpdateUserEmailExistent(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("misael@qa.com.br");
         given()
@@ -186,7 +186,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserEmptyEmail(){
+    public void testUpdateUserEmptyEmail(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setEmail("");
         given()
@@ -200,7 +200,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserWithoutPassword(){
+    public void testUpdateUserWithoutPassword(){
         CreateUsersPojo user = new UserDataFactory().userWithoutPassword();
         given()
                 .contentType(ContentType.JSON)
@@ -213,7 +213,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserPasswordNull(){
+    public void testUpdateUserPasswordNull(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setPassword(null);
         given()
@@ -227,7 +227,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserPasswordEmpty(){
+    public void testUpdateUserPasswordEmpty(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setPassword("");
         given()
@@ -241,7 +241,7 @@ public class UpdateUserTest {
     }
 
     @Test
-    public void updateUserFieldsRequired(){
+    public void testUpdateUserFieldsRequired(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         given()
                 .body(user)
