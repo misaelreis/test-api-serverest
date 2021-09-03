@@ -17,7 +17,7 @@ public class ListProductTest {
     public String productId;
 
     @Test
-    public void listProducts(){
+    public void testListProducts(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -30,7 +30,7 @@ public class ListProductTest {
     }
 
     @Test
-    public void listProductsForId(){
+    public void testListProductsForId(){
         tokenId = new LoginUtil().loginAdmFix();
         ProductPojo product = new ProductDataFactory().product();
         productId = given()
@@ -54,7 +54,7 @@ public class ListProductTest {
     }
 
     @Test
-    public void listProductsParams(){
+    public void testListProductsParams(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
@@ -69,7 +69,7 @@ public class ListProductTest {
     }
 
     @Test
-    public void listProductsParamsIncorrect(){
+    public void testListProductsParamsIncorrect(){
         ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)

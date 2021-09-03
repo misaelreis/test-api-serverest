@@ -44,7 +44,7 @@ public class DeleteUserTest {
 
 
     @Test
-    public void deleteUser(){
+    public void testDeleteUser(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         ID = given()
                 .contentType(ContentType.JSON)
@@ -65,7 +65,7 @@ public class DeleteUserTest {
     }
 
     @Test
-    public void deleteUserIdIncorrect(){
+    public void testDeleteUserIdIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -76,7 +76,7 @@ public class DeleteUserTest {
     }
 
     @Test
-    public void deleteUserWithCar(){
+    public void testDeleteUserWithCar(){
         ProductPojo product = new ProductDataFactory().product();
         productId = given()
                 .contentType(ContentType.JSON)

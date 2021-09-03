@@ -40,7 +40,7 @@ public class listCarTest {
     }
 
     @Test
-    public void listCarForId(){
+    public void testListCarForId(){
         CarPojo car = new CarDataFactory().car();
         car.addProducts((new ProductCarPojo(productId,1)));
         carId = given()
@@ -71,7 +71,7 @@ public class listCarTest {
     }
 
     @Test
-    public void listCars(){
+    public void testListCars(){
         given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -81,7 +81,7 @@ public class listCarTest {
     }
 
     @Test
-    public void listCarIncorrectParams(){
+    public void testListCarIncorrectParams(){
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("id", 1)
@@ -93,7 +93,7 @@ public class listCarTest {
     }
 
     @Test
-    public void listCarTypeParamsIncorrect(){
+    public void testListCarTypeParamsIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("precoTotal", "1")
