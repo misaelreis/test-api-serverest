@@ -6,6 +6,7 @@
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/car/CancelCarTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/users/DeleteUserTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/utils/LoginUtil.java
+/home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/car/ListCarTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/factories/LoginDataFactory.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/product/UpdateProductTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/factories/ProductDataFactory.java
@@ -20,7 +21,6 @@
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/pojo/ProductCarPojo.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/pojo/CarPojo.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/car/CreateCarTest.java
-/home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/car/listCarTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/pojo/CreateUsersPojo.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/tests/car/ConcludeCarTest.java
 /home/misael/Documents/automacao-back/test-api-serverest/src/test/java/factories/CarDataFactory.java

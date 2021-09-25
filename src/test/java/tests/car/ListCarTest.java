@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.notNullValue;
 import static utils.BaseUrlUtil.baseUrlCar;
 import static utils.BaseUrlUtil.baseUrlProduct;
 
-public class listCarTest {
+public class ListCarTest {
 
     public String tokenId;
     public String productId;

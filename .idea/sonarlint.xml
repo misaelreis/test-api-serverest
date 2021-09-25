@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="analysisLogsEnabled" value="true" />
+    <option name="bindingEnabled" value="true" />
+    <option name="fileExclusions">
+      <list>
+        <option value="FILE:src/test/java/tests/car/listCarTest.java" />
+        <option value="FILE:src/test/java/tests/car/TestListCarTest.java" />
+        <option value="FILE:src/test/java/tests/car/CreateCarTest.java" />
+        <option value="FILE:src/test/java/tests/car/ConcludeCarTest.java" />
+        <option value="FILE:src/test/java/factories/CarDataFactory.java" />
+      </list>
+    </option>
+    <option name="projectKey" value="Misaelreis_test-api-serverest" />
+    <option name="verboseEnabled" value="true" />
+    <option name="serverId" value="test" />
+  </component>
+</project>

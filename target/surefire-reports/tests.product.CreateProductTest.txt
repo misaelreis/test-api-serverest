@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.product.CreateProductTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.999 sec
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.994 sec

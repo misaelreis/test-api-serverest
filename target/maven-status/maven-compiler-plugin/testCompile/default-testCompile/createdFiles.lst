@@ -11,7 +11,6 @@ pojo/CreateUsersPojo.class
 pojo/ProductCarPojo.class
 tests/product/CreateProductTest.class
 tests/car/CancelCarTest.class
-tests/car/listCarTest.class
 pojo/ProductPojo.class
 tests/car/ConcludeCarTest.class
 pojo/LoginPojo.class
