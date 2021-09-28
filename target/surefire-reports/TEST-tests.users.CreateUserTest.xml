@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="tests.users.CreateUserTest" time="6.858" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="tests.users.CreateUserTest" time="10.221" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,21 +61,21 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailIncorrect" time="0.431"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordNull" time="0.451"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserAdmWithoutType" time="0.425"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateAdmUser" time="0.367"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameEmpty" time="0.344"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailEmpty" time="0.397"/>
-  <testcase classname="tests.users.CreateUserTest" name="testUserContract" time="0.365"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutName" time="0.399"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmIncorrect" time="0.378"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutEmail" time="0.363"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUser" time="0.366"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserFieldsRequired" time="0.447"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameNull" time="0.352"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmNull" time="0.377"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutPassword" time="0.366"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailExistent" time="0.649"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordEmpty" time="0.381"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailIncorrect" time="0.723"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordNull" time="0.687"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserAdmWithoutType" time="0.607"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateAdmUser" time="0.95"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameEmpty" time="0.563"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailEmpty" time="0.538"/>
+  <testcase classname="tests.users.CreateUserTest" name="testUserContract" time="0.859"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutName" time="0.411"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmIncorrect" time="1.007"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutEmail" time="0.508"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUser" time="0.435"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserFieldsRequired" time="0.667"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameNull" time="0.363"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmNull" time="0.399"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutPassword" time="0.379"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailExistent" time="0.768"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordEmpty" time="0.357"/>
 </testsuite>

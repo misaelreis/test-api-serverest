@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="tests.users.UpdateUserTest" time="12.545" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="tests.users.UpdateUserTest" time="14.23" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,21 +61,21 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailExistent" time="0.715"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmNull" time="0.73"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordEmpty" time="0.724"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameNull" time="0.745"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUser" time="0.709"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserFieldsRequired" time="0.729"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutTypeAdm" time="0.622"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordNull" time="0.734"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserAdm" time="0.715"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmIncorrect" time="0.679"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailIncorrect" time="0.85"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmptyEmail" time="0.713"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutName" time="1.072"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameEmpty" time="0.658"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutPassword" time="0.693"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserIncorrectId" time="0.744"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutEmail" time="0.713"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailExistent" time="1.109"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmNull" time="0.819"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordEmpty" time="0.78"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameNull" time="0.726"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUser" time="0.79"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserFieldsRequired" time="0.897"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutTypeAdm" time="0.791"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordNull" time="0.777"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserAdm" time="0.971"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmIncorrect" time="0.813"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailIncorrect" time="1.2"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmptyEmail" time="0.878"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutName" time="0.735"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameEmpty" time="0.674"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutPassword" time="0.72"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserIncorrectId" time="0.805"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutEmail" time="0.745"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="tests.car.CancelCarTest" time="4.189" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="tests.car.CancelCarTest" time="4.874" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutToken" time="1.275"/>
-  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutCar" time="1.313"/>
-  <testcase classname="tests.car.CancelCarTest" name="testCancelCart" time="1.601"/>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutToken" time="1.409"/>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutCar" time="1.463"/>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCart" time="2.002"/>
 </testsuite>
