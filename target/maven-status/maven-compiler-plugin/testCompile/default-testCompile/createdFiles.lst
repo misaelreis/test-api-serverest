@@ -7,6 +7,7 @@ utils/BaseUrlUtil.class
 pojo/CarPojo.class
 factories/ProductDataFactory.class
 utils/UserUtil.class
+tests/car/ListCarTest.class
 pojo/CreateUsersPojo.class
 pojo/ProductCarPojo.class
 tests/product/CreateProductTest.class

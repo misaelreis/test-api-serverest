@@ -64,8 +64,7 @@ public class ListProductTest {
                 .when()
                 .get(baseUrlProduct)
                 .then()
-                .statusCode(200)
-                .body("produtos._id[0]", notNullValue());
+                .statusCode(200);
     }
 
     @Test
