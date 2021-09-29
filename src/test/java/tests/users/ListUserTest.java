@@ -84,7 +84,7 @@ public class ListUserTest {
     }
 
     @Test
-    public void tstListUserIdIncorrect(){
+    public void testListUserIdIncorrect(){
         given()
                 .contentType(ContentType.JSON)
                 .when()
