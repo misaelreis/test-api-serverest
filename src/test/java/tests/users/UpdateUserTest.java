@@ -174,7 +174,12 @@ public class UpdateUserTest {
     @Test
     public void testUpdateUserEmailExistent(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
-        user.setEmail("misael@qa.com.br");
+        user.setEmail("batatinhafrita@123.com.br");
+        given()
+                .contentType(ContentType.JSON)
+                .body(user)
+                .when()
+                .post(baseUrlUser);
         given()
                 .contentType(ContentType.JSON)
                 .body(user)
