@@ -7,8 +7,7 @@ import pojo.ProductPojo;
 import utils.LoginUtil;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
 import static utils.BaseUrlUtil.baseUrlProduct;
 
 public class ListProductTest {
@@ -18,10 +17,8 @@ public class ListProductTest {
 
     @Test
     public void testListProducts(){
-        ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
-                .body(product)
                 .when()
                 .get(baseUrlProduct)
                 .then()
@@ -55,31 +52,28 @@ public class ListProductTest {
 
     @Test
     public void testListProductsParams(){
-        ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("preco", 100)
                 .queryParam("quantidade", 3)
-                .body(product)
                 .when()
                 .get(baseUrlProduct)
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body("produtos.preco[0]", equalTo(100));
     }
 
     @Test
     public void testListProductsParamsIncorrect(){
-        ProductPojo product = new ProductDataFactory().product();
         given()
                 .contentType(ContentType.JSON)
                 .queryParam("Preco", 100)
                 .queryParam("Quantidade", 3)
-                .body(product)
                 .when()
                 .get(baseUrlProduct)
                 .then()
                 .statusCode(400)
-                .body("Quantidade", equalTo("Quantidade não é permitido"))
-                .body("Preco", equalTo("Preco não é permitido"));
+                .body("Preco", equalTo("Preco não é permitido"))
+                .body("Quantidade", equalTo("Quantidade não é permitido"));
     }
 }
