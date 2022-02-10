@@ -2,9 +2,7 @@ package pojo;
 import lombok.Data;
 
 @Data
-public class CreateUsersPojo {
+public class CreateUsersPojo extends LoginPojo {
     private String nome;
-    private String email;
-    private String password;
     private String administrador;
 }
