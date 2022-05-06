@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tests.users.CreateUserTest
+Test set: tests.car.ListCarTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.64 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.944 sec

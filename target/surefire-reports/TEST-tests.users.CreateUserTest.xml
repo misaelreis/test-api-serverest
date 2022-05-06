@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="tests.users.CreateUserTest" time="25.765" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="tests.users.CreateUserTest" time="7.637" errors="0" skipped="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.13+8-Ubuntu-0ubuntu1.20.04"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/misael/Documents/automacao-back/test-api-serverest"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\zaela\OneDrive\Documentos\estudos\automacao-back\test-api-serverest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/misael/Documents/automacao-back/test-api-serverest"/>
+    <property name="user.dir" value="C:\Users\zaela\OneDrive\Documentos\estudos\automacao-back\test-api-serverest"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="11.0.13+8-Ubuntu-0ubuntu1.20.04"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.io.tmpdir" value="C:\Users\zaela\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="classworlds.conf" value="C:\Program Files\maven\apache-maven-3.8.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\maven\apache-maven-3.8.5\bin;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\nodejs\;C:\Users\zaela\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;;C:\Users\zaela\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\maven\bin;C:\Users\zaela\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\maven\apache-maven-3.8.5/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="62.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.4.0-99-generic"/>
-    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
-    <property name="user.home" value="/home/misael"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\maven\apache-maven-3.8.5\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\zaela"/>
     <property name="user.timezone" value="America/Sao_Paulo"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="user.name" value="misael"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="zaela"/>
+    <property name="java.class.path" value="C:\Program Files\maven\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.1.1"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="11.0.13"/>
-    <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2021-10-19"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="C:\Program Files\maven\apache-maven-3.8.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailIncorrect" time="0.869"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordNull" time="0.946"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserAdmWithoutType" time="0.931"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateAdmUser" time="1.235"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameEmpty" time="3.042"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailEmpty" time="3.988"/>
-  <testcase classname="tests.users.CreateUserTest" name="testUserContract" time="4.614"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutName" time="1.551"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmIncorrect" time="0.598"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutEmail" time="1.229"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUser" time="0.65"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserFieldsRequired" time="0.93"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameNull" time="0.902"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmNull" time="0.89"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutPassword" time="0.916"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailExistent" time="1.573"/>
-  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordEmpty" time="0.901"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailIncorrect" time="0.419"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordNull" time="0.439"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserAdmWithoutType" time="0.42"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateAdmUser" time="0.441"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameEmpty" time="0.422"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailEmpty" time="0.416"/>
+  <testcase classname="tests.users.CreateUserTest" name="testUserContract" time="0.433"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutName" time="0.433"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmIncorrect" time="0.43"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutEmail" time="0.42"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUser" time="0.431"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserFieldsRequired" time="0.421"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameNull" time="0.423"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmNull" time="0.418"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutPassword" time="0.427"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailExistent" time="0.839"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordEmpty" time="0.405"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="tests.users.UpdateUserTest" time="15.442" errors="0" skipped="0">
+<testsuite tests="14" failures="0" name="tests.product.CreateProductTest" time="30.373" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1.1+2-6"/>
@@ -61,21 +61,18 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailExistent" time="1.299"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmNull" time="0.83"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordEmpty" time="0.844"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameNull" time="0.863"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUser" time="1.023"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserFieldsRequired" time="0.878"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutTypeAdm" time="0.926"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordNull" time="0.947"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserAdm" time="0.894"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmIncorrect" time="0.921"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailIncorrect" time="0.973"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmptyEmail" time="0.831"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutName" time="0.856"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameEmpty" time="0.834"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutPassword" time="0.851"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserIncorrectId" time="0.857"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutEmail" time="0.815"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutName" time="2.135"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductNameExistent" time="2.632"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutDescription" time="2.101"/>
+  <testcase classname="tests.product.CreateProductTest" name="testProductContract" time="2.123"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProduct" time="2.173"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutQuantity" time="2.124"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductIdUser" time="2.082"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductQuantityNull" time="2.128"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductFieldRequire" time="2.224"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductPriceNull" time="2.105"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductNameNull" time="2.146"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductDescriptionNull" time="2.113"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutPrice" time="2.06"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutToken" time="2.227"/>
 </testsuite>
