@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="tests.users.UpdateUserTest" time="15.442" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="tests.users.ListUserTest" time="3.292" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1.1+2-6"/>
@@ -61,21 +61,10 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailExistent" time="1.299"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmNull" time="0.83"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordEmpty" time="0.844"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameNull" time="0.863"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUser" time="1.023"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserFieldsRequired" time="0.878"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutTypeAdm" time="0.926"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordNull" time="0.947"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserAdm" time="0.894"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmIncorrect" time="0.921"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailIncorrect" time="0.973"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmptyEmail" time="0.831"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutName" time="0.856"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameEmpty" time="0.834"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutPassword" time="0.851"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserIncorrectId" time="0.857"/>
-  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutEmail" time="0.815"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserTypeParamsIncorrect" time="0.392"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserParamsIncorrect" time="0.401"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserWithoutParams" time="0.395"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUsersAllParams" time="0.888"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserIdIncorrect" time="0.401"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserForId" time="0.815"/>
 </testsuite>
