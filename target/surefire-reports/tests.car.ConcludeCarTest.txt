@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.car.ConcludeCarTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.648 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.238 sec

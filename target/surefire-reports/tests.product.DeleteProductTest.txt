@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.product.DeleteProductTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.459 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.044 sec
