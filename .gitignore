@@ -3,6 +3,7 @@
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
+*/target/*
 .idea/**/shelf
 .idea/**/gradle.xml
 .idea/**/libraries
