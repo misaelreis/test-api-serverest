@@ -22,4 +22,4 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn surefire-report:report
+      run: mvn test
