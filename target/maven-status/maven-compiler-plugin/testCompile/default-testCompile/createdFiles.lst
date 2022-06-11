@@ -23,4 +23,5 @@ pojo\CarPojo.class
 tests\users\DeleteUserTest.class
 pojo\LoginPojo.class
 factories\ProductDataFactory.class
+Runner.class
 tests\product\ListProductTest.class

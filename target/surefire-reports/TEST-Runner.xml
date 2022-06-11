@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="109" failures="0" name="Runner" time="199.282" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2022.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\zaela\Documents\Estudos\automacao-back\test-api-serverest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="test" value="Runner"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\zaela\Documents\Estudos\automacao-back\test-api-serverest"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\zaela\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\maven\apache-maven-3.8.5\bin;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\nodejs\;C:\Users\zaela\AppData\Local\Android\Sdk\platform-tools;C:\Users\zaela\AppData\Local\Android\Sdk\tools;C:\Tools\cmder\vendor\git-for-windows\bin;C:\Tools\cmder\vendor\git-for-windows\usr\bin;C:\Users\zaela\AppData\Local\Android\Sdk\tools\lib;C:\Users\zaela\AppData\Local\Android\Sdk\tools\bin;C:\Users\zaela\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\zaela\AppData\Local\Programs\Python\Python310\;C:\Users\zaela\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\bin;;C:\Users\zaela\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\maven\bin;C:\Users\zaela\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\zaela"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="zaela"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.1 -Dtest=Runner test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.1.1"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutToken" time="4.318"/>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCarWithoutCar" time="2.032"/>
+  <testcase classname="tests.car.CancelCarTest" name="testCancelCart" time="2.349"/>
+  <testcase classname="tests.car.ConcludeCarTest" name="testConcludeCarWithoutCar" time="1.998"/>
+  <testcase classname="tests.car.ConcludeCarTest" name="testConcludeCarWithoutToken" time="1.877"/>
+  <testcase classname="tests.car.ConcludeCarTest" name="testConcludeCar" time="2.548"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateCarFieldRequired" time="2.247"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateTwoCars" time="3.123"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCarContract" time="2.599"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateCarQuantityProductInsufficient" time="2.284"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateCarWithoutToken" time="2.051"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateCar" time="2.837"/>
+  <testcase classname="tests.car.CreateCarTest" name="testCreateCarWithoutProducts" time="1.99"/>
+  <testcase classname="tests.car.ListCarTest" name="testListCarIncorrectParams" time="2.003"/>
+  <testcase classname="tests.car.ListCarTest" name="testListCarTypeParamsIncorrect" time="1.915"/>
+  <testcase classname="tests.car.ListCarTest" name="testListCars" time="1.974"/>
+  <testcase classname="tests.car.ListCarTest" name="testListCarForId" time="3.652"/>
+  <testcase classname="tests.login.LoginTest" name="tesLoginSuccess" time="0.961"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginEmailNull" time="0.446"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginFieldsRequired" time="0.452"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginEmailEmpty" time="0.413"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginWithoutPassword" time="0.406"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginPasswordNull" time="0.654"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginEmailIncorrect" time="0.5"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginPasswordIncorrect" time="0.513"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginContract" time="1.017"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginWithoutEmail" time="0.431"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginEmailNoRegistered" time="0.524"/>
+  <testcase classname="tests.login.LoginTest" name="testLoginPasswordEmpty" time="0.417"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutName" time="2.363"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductNameExistent" time="3.13"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutDescription" time="2.742"/>
+  <testcase classname="tests.product.CreateProductTest" name="testProductContract" time="2.766"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProduct" time="3.715"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutQuantity" time="3.036"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductIdUser" time="2.775"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductQuantityNull" time="2.96"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductFieldRequire" time="2.915"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductPriceNull" time="2.819"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductNameNull" time="2.772"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductDescriptionNull" time="3.082"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutPrice" time="2.748"/>
+  <testcase classname="tests.product.CreateProductTest" name="testCreateProductWithoutToken" time="2.978"/>
+  <testcase classname="tests.product.DeleteProductTest" name="testDeleteProductAbsent" time="3.173"/>
+  <testcase classname="tests.product.DeleteProductTest" name="testDeleteProductWithCar" time="5.921"/>
+  <testcase classname="tests.product.DeleteProductTest" name="testDeleteProductTokenUser" time="3.498"/>
+  <testcase classname="tests.product.DeleteProductTest" name="testDeleteProduct" time="5.112"/>
+  <testcase classname="tests.product.DeleteProductTest" name="testDeleteProductWithoutToken" time="3.691"/>
+  <testcase classname="tests.product.ListProductTest" name="testListProductsParamsIncorrect" time="0.64"/>
+  <testcase classname="tests.product.ListProductTest" name="testListProducts" time="0.705"/>
+  <testcase classname="tests.product.ListProductTest" name="testListProductsParams" time="0.63"/>
+  <testcase classname="tests.product.ListProductTest" name="testListProductsForId" time="2.55"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductWithoutPrice" time="2.35"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductWithoutToken" time="2.863"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductPriceNull" time="2.552"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductNameExistent" time="4.302"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductNameNull" time="2.25"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductIdUser" time="3.385"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductDescriptionNull" time="2.453"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductFieldsRequire" time="2.278"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProduct" time="2.33"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductWithoutDescription" time="3.022"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductWithoutName" time="2.4"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductQuantityNull" time="2.458"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductIdIncorrect" time="2.878"/>
+  <testcase classname="tests.product.UpdateProductTest" name="testUpdateProductWithoutQuantity" time="2.245"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailIncorrect" time="0.612"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordNull" time="0.513"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserAdmWithoutType" time="0.493"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateAdmUser" time="0.65"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameEmpty" time="0.599"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailEmpty" time="0.519"/>
+  <testcase classname="tests.users.CreateUserTest" name="testUserContract" time="0.599"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutName" time="0.722"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmIncorrect" time="0.824"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutEmail" time="0.507"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUser" time="0.632"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserFieldsRequired" time="0.543"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserNameNull" time="0.669"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserTypeAdmNull" time="0.615"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserWithoutPassword" time="0.816"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserEmailExistent" time="1.128"/>
+  <testcase classname="tests.users.CreateUserTest" name="testCreateUserPasswordEmpty" time="0.615"/>
+  <testcase classname="tests.users.DeleteUserTest" name="testDeleteUserWithCar" time="5.102"/>
+  <testcase classname="tests.users.DeleteUserTest" name="testDeleteUserIdIncorrect" time="2.98"/>
+  <testcase classname="tests.users.DeleteUserTest" name="testDeleteUser" time="2.998"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserTypeParamsIncorrect" time="0.603"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserParamsIncorrect" time="0.472"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserWithoutParams" time="0.561"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUsersAllParams" time="1.022"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserIdIncorrect" time="1.278"/>
+  <testcase classname="tests.users.ListUserTest" name="testListUserForId" time="1.093"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailExistent" time="1.289"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmNull" time="1.142"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordEmpty" time="0.906"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameNull" time="1.315"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUser" time="1.15"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserFieldsRequired" time="1.16"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutTypeAdm" time="0.954"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserPasswordNull" time="1.009"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserAdm" time="1.228"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserTypeAdmIncorrect" time="1.279"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmailIncorrect" time="1.214"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserEmptyEmail" time="1.027"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutName" time="1.029"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserNameEmpty" time="1.224"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutPassword" time="1.023"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserIncorrectId" time="1.148"/>
+  <testcase classname="tests.users.UpdateUserTest" name="testUpdateUserWithoutEmail" time="1.002"/>
+</testsuite>
