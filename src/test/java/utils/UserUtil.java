@@ -24,6 +24,19 @@ public class UserUtil {
         return null;
     }
 
+    public UserUtil createUserAdmCar(){
+        CreateUsersPojo user = new UserDataFactory().userAdm();
+        user.setNome("Misael Reis");
+        user.setEmail("misael@test.com");
+        given()
+                .contentType(ContentType.JSON)
+                .body(user)
+                .when()
+                .post(baseUrlUser)
+                .then();
+        return null;
+    }
+
     public UserUtil createUser(){
         CreateUsersPojo user = new UserDataFactory().userAdm();
         user.setNome("Misael Usuario");

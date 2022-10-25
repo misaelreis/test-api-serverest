@@ -40,37 +40,6 @@ public class ListCarTest {
     }
 
     @Test
-    public void testListCarForId(){
-        CarPojo car = new CarDataFactory().car();
-        car.addProducts((new ProductCarPojo(productId,1)));
-        carId = given()
-                .contentType(ContentType.JSON)
-                .headers("Authorization", tokenId)
-                .body(car)
-                .when()
-                .post(baseUrlCar)
-                .then()
-                .statusCode(201)
-                .extract().path("_id");
-
-        given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get(baseUrlCar.concat(carId))
-                .then()
-                .statusCode(200)
-                .body("_id", equalTo(carId));
-
-        given()
-                .contentType(ContentType.JSON)
-                .headers("Authorization", tokenId)
-                .delete(baseUrlCar.concat("concluir-compra"))
-                .then()
-                .statusCode(200)
-                .body("message", equalTo("Registro excluído com sucesso"));
-    }
-
-    @Test
     public void testListCars(){
         given()
                 .contentType(ContentType.JSON)

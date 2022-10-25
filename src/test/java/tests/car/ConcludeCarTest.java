@@ -39,41 +39,6 @@ public class ConcludeCarTest {
     }
 
     @Test
-    public void testConcludeCar(){
-        CarPojo car = new CarDataFactory().car();
-        car.addProducts((new ProductCarPojo(productId,1)));
-        given()
-                .contentType(ContentType.JSON)
-                .headers("Authorization", tokenId)
-                .body(car)
-                .when()
-                .post(baseUrlCar)
-                .then()
-                .statusCode(201)
-                .body("message", equalTo("Cadastro realizado com sucesso"))
-                .body("_id", notNullValue());
-
-        given()
-                .contentType(ContentType.JSON)
-                .headers("Authorization", tokenId)
-                .delete(baseUrlCar.concat("concluir-compra"))
-                .then()
-                .statusCode(200)
-                .body("message", equalTo("Registro excluído com sucesso"));
-    }
-
-    @Test
-    public void testConcludeCarWithoutCar(){
-        given()
-                .contentType(ContentType.JSON)
-                .headers("Authorization", tokenId)
-                .delete(baseUrlCar.concat("concluir-compra"))
-                .then()
-                .statusCode(200)
-                .body("message", equalTo("Não foi encontrado carrinho para esse usuário"));
-    }
-
-    @Test
     public void testConcludeCarWithoutToken(){
         given()
                 .contentType(ContentType.JSON)
